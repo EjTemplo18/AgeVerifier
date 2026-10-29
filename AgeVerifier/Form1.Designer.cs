@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            textBoxInputOutput = new TextBox();
             label1 = new Label();
-            button1 = new Button();
+            buttonVerifyAge = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textBoxInputOutput
             // 
-            textBox1.Location = new Point(143, 80);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 0;
+            textBoxInputOutput.Location = new Point(143, 80);
+            textBoxInputOutput.Name = "textBoxInputOutput";
+            textBoxInputOutput.Size = new Size(125, 27);
+            textBoxInputOutput.TabIndex = 0;
             // 
             // label1
             // 
@@ -49,23 +49,24 @@
             label1.TabIndex = 1;
             label1.Text = "Age:";
             // 
-            // button1
+            // buttonVerifyAge
             // 
-            button1.Location = new Point(117, 113);
-            button1.Name = "button1";
-            button1.Size = new Size(127, 40);
-            button1.TabIndex = 2;
-            button1.Text = "Verify Age";
-            button1.UseVisualStyleBackColor = true;
+            buttonVerifyAge.Location = new Point(117, 113);
+            buttonVerifyAge.Name = "buttonVerifyAge";
+            buttonVerifyAge.Size = new Size(127, 40);
+            buttonVerifyAge.TabIndex = 2;
+            buttonVerifyAge.Text = "Verify Age";
+            buttonVerifyAge.UseVisualStyleBackColor = true;
+            buttonVerifyAge.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(372, 243);
-            Controls.Add(button1);
+            Controls.Add(buttonVerifyAge);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxInputOutput);
             Name = "Form1";
             Text = "Age Verifier";
             ResumeLayout(false);
@@ -74,8 +75,8 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox textBoxInputOutput;
         private Label label1;
-        private Button button1;
+        private Button buttonVerifyAge;
     }
 }
